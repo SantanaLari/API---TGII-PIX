@@ -2,7 +2,7 @@
 API - Coleta Chave Pix
 
 # Aviso
-Essa API está em fase de desenvolvimento. Posteriormente algumas funções são corrigidas.
+Essa API está em fase de desenvolvimento. Posteriormente algumas funções serão corrigidas.
 
 ## Principal Funcionalidade
 Essa API tem como objetivo simular a filtragem e contabilização de chaves Pix encontradas em um arquivo JSON. 
