@@ -1,0 +1,26 @@
+[
+    {
+        "Situacao": "cpf correto", 
+        "Pix": "642.902.610-86"
+    },
+    {
+        "Situacao": "cpf invalido", 
+        "Pix": "642.902.610-00"
+    },
+    {
+        "Situacao": "email invalido", 
+        "Pix": "fulanadocarmo@gmail"
+    },
+    {
+        "Situacao": "email valido", 
+        "Pix": "creuzanunes@outlook.com"
+    },
+    {
+        "Situacao": "celular invalido", 
+        "Pix": "90123-1234"
+    },
+    {
+        "Situacao": "celular valido", 
+        "Pix": "1191234-1234"
+    }           
+]
