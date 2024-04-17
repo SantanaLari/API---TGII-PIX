@@ -29,3 +29,6 @@ Essa API tem como objetivo simular a filtragem e contabilização de chaves Pix 
 ]
 ```
 Nesse exemplo, a chave correta seria "contato", porque o valor associado a ela é uma possível chave Pix. 
+
+### Observação
+Um arquivo json com informações geradas unicamente para testes foi disponibilizado na pasta TESTES. Use-o caso, se quiser.
