@@ -45,4 +45,6 @@ async def contagem_pix(chave_json:str):
         return JSONResponse(status_code=404, content={"message":"No file uploaded yet."})
 
 if __name__ == '__main__':
-    index()
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)  
+    #index()
