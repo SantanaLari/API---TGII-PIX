@@ -1,34 +1,16 @@
-
 API - Coleta Chave Pix
 
-# Aviso
-Essa API está em fase de desenvolvimento. Posteriormente algumas funções serão corrigidas.
+## Link Para Acessar a API
+https://api-pix-7t33.onrender.com/
 
 ## Principal Funcionalidade
 Essa API tem como objetivo simular a filtragem e contabilização de chaves Pix encontradas em um arquivo JSON. 
 
 ## Exemplo de uso
-- Enviar um arquivo .json:
-    - Endpoint: http://127.0.0.1:8000/ 
-    - Somente envie arquivos json, qualquer outro tipo de arquivo não dará certo.
+|Endpoint|Tipo|Funcionalidade|
+|:-------|:---|:-------------:|
+|/|GET|Exibe uma tela que permite o envio de um arquivo json.|
+|/upload_arquivo/|POST|Retorna um aviso sobre o arquivo json que foi enviado.|
+|/exibe_contagem/{chave_json}|GET|Retorna a quantidade de chaves Pix identificadas no arquivo JSON correspondente à {chave_json} especificada na URL. A {chave_json} deve ser o nome de uma chave que tem como valor uma possível chave Pix."|
 
-- Confirmar a validação do arquivo:
-    - Endpoint: http://127.0.0.1:8000/upload_arquivo/ 
-    - Você será direcionado para essa página após o envio do arquivo. Nela você confirmará se o arquivo foi aceito.
 
-- Exibir a contagem das chaves Pix:
-    - http://127.0.0.1:8000/exibe_contagem/{chave_json}
-    - Substitua {chave_json} pela chave correta presente no seu arquivo json. Exemplo:
-```json
-[
-    {
-        "nome": "Fulano",
-        "contato": "1191234-1234",
-        "data_nasc": "22/06/1945"
-    }
-]
-```
-Nesse exemplo, a chave correta seria "contato", porque o valor associado a ela é uma possível chave Pix. 
-
-### Observação
-Um arquivo json com informações geradas unicamente para testes foi disponibilizado na pasta TESTES. Use-o, se quiser.
